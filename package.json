@@ -4,7 +4,9 @@
   "description": "Circom installation boilerplate",
   "main": "index.js",
   "scripts": {
-    "setup": "curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh && git clone https://github.com/iden3/circom.git && cd circom && cargo build --release && cargo install --path circom && npm install -g snarkjs"
+    "install_rust": "curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh",
+    "setup": "git clone https://github.com/iden3/circom.git && cd circom && cargo build --release && cargo install --path circom && npm install -g snarkjs",
+    "dev": "sh run.sh -c circuit -i input"
   },
   "keywords": [],
   "author": "Vladimir Kumalagov",
