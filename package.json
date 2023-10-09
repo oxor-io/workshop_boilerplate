@@ -1,12 +1,14 @@
 {
   "name": "circom_boilerplate",
   "version": "1.0.0",
-  "description": "Circom installation boilerplate",
+  "description": "Circom boilerplate",
   "main": "index.js",
   "scripts": {
     "install_rust": "curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh",
     "setup": "git clone https://github.com/iden3/circom.git && cd circom && cargo build --release && cargo install --path circom && npm install -g snarkjs",
-    "dev": "sh run.sh -c circuit -i input"
+    "dev": "sh run.sh -c circuit -i input",
+    "dev_no_pots": "sh run.sh -c circuit -i input -r 1",
+    "solidityVerifier": "mkdir -p src && snarkjs zkey export solidityverifier build/circuit.zkey src/Verifier.sol"
   },
   "keywords": [],
   "author": "Vladimir Kumalagov",
