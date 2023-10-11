@@ -6,9 +6,9 @@
   "scripts": {
     "install_rust": "curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh",
     "setup": "git clone https://github.com/iden3/circom.git && cd circom && cargo build --release && cargo install --path circom && npm install -g snarkjs",
-    "dev": "sh run.sh -c circuit -i input",
-    "dev_no_pots": "sh run.sh -c circuit -i input -r 1",
-    "solidityVerifier": "mkdir -p src && snarkjs zkey export solidityverifier build/circuit.zkey src/Verifier.sol"
+    "test": "sh scripts/run.sh -i input -c",
+    "test_no_pots": "sh scripts/run.sh -i input -r 1 -c",
+    "solidityVerifier": "sh scripts/createVerifier.sh"
   },
   "keywords": [],
   "author": "Vladimir Kumalagov",

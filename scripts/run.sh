@@ -10,10 +10,10 @@ CEREMONY=
 while getopts "c:i:r:" opt; do
   case $opt in
     c)
-      CIRCUIT_NAME=$OPTARG
+      CIRCUIT_NAME=$(basename "$OPTARG" .circom)
       ;;
     i)
-      INPUT_NAME=$OPTARG
+      INPUT_NAME=$(basename "$OPTARG" .json)
       ;;
     r)
       CEREMONY=$OPTARG
