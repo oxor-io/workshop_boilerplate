@@ -9,4 +9,6 @@ if [ -z "$1" ]; then
 fi
 
 mkdir -p src
-snarkjs zkey export solidityverifier ./build/$1 src/Verifier.sol
+
+ZKEY_NAME=$(basename "$1" .zkey)
+snarkjs zkey export solidityverifier ./build/$ZKEY_NAME.zkey src/Verifier.sol
