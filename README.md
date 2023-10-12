@@ -1,6 +1,6 @@
 # Circom Boilerplate
 
-Welcome to **Circom Boilerplate**, your go-to toolkit for simplifying the development process with Circom. This comprehensive boilerplate comes loaded with essential scripts, ensuring a hassle-free experience in setting up your environment, installing crucial dependencies, and automating the entire development workflow.
+Welcome to **Circom Boilerplate**, your go-to toolkit for simplifying the development process with Circom. This boilerplate comes loaded with scripts, ensuring a hassle-free experience in setting up your environment, installing dependencies, and automating the entire development workflow.
 
 ## Prerequisites
 
