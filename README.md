@@ -6,7 +6,7 @@ Welcome to **Circom Boilerplate**, your go-to toolkit for simplifying the develo
 
 - **Node.js:** Installed (Version 10 or higher)
 
-> **Pro Tip:**
+> **Tip:**
 > Don't have Node.js installed? No worries! You can easily try out this boilerplate using GitHub Codespaces. Simply click the green `<> Code` button on the repository page, select `Codespaces`, and hit the `+` button. Voilà! You'll have an online development environment tailored to this project.
 
 ## Installation
@@ -38,7 +38,7 @@ npm run install_rust
 ```
 
 > **Note:**
->
+> During the process you will be asked to select an installation method, select option 1 (unless you require a different one).
 > After the installation, close the current terminal and open a new one to continue.
 
 Install Circom and SnarkJS:
@@ -47,11 +47,16 @@ Install Circom and SnarkJS:
 npm run setup
 ```
 
+> **Tip:**
+> For comfortable writing of circuits you can install the Circom code [highlighting extension](https://marketplace.visualstudio.com/items?itemName=iden3.circom). (More visually appealing than black and white text).
+
 ## Usage
 
 This boilerplate offers the following scripts:
 
 ### Test Your Circuit
+
+> Depending on your circuit, fill in the input.json file.
 
 This script handles everything – from compiling your circuit to verifying it with a generated witness. Important: This contributes to PowersOfTau (POT) and prepares for the second phase (this might take a while).
 
